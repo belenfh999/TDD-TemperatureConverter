@@ -7,6 +7,8 @@ module TemperatureConverterMod
         ((temperature - 32.0) / 1.8)
       elsif input_scale == 'celsius' and output_scale == 'kelvin'
         temperature + 273.15
+      elsif input_scale == 'kelvin' and output_scale == 'celsius'
+        temperature - 273.15
       else
       temperature
       end
