@@ -44,4 +44,10 @@ class TemperatureConverterTest < Minitest::Test
     assert_equal(expected_temperature,
                  @temperature_converter.convert_temp(input_temperature, input_scale: 'celsius', output_scale: 'kelvin'))
   end
+
+  def test_kelvin_to_celsius
+    expected_temperature = -273.15
+    assert_equal(expected_temperature,
+                 @temperature_converter.convert_temp(0, input_scale: 'kelvin', output_scale: 'celsius'))
+  end
 end
