@@ -26,4 +26,11 @@ class TemperatureConverterTest < Minitest::Test
     assert_equal(expected_temperature,
                  @temperature_converter.convert_temp(0, input_scale: 'celsius', output_scale: 'fahrenheit'))
   end
+
+  def test_fahrenheit_to_celsius
+    input_temperature = 0
+    expected_temperature = ((input_temperature - 32.0) / 1.8)
+    assert_equal(expected_temperature,
+                 @temperature_converter.convert_temp(input_temperature, input_scale: 'fahrenheit', output_scale: 'celsius'))
+  end
 end
