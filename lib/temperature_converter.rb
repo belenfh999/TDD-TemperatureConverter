@@ -11,6 +11,8 @@ module TemperatureConverterMod
         temperature - 273.15
       elsif input_scale == 'kelvin' and output_scale == 'fahrenheit'
         (temperature - 273.15) * 1.8
+      elsif input_scale == 'fahrenheit' and output_scale == 'kelvin'
+        ((temperature - 32) / 1.8) + 273.15
       else
       temperature
       end
