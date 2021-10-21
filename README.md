@@ -18,6 +18,6 @@ Implementation of a Temperature Scale Converter to learn TDD using Ruby &amp; Mi
 * Build a method called convert_temp that takes 3 arguments using a TDD approach:
   * temperature: The temperature to be converted.
   * input_scale: The scale of the temperature provided.
-  * output_scale: Desired scale to convert into.
+  * output_scale: Desired scale to convert into. By default it is celsius.
 * The method should return the temperature in the output scale.
 * Note that the scales names have to be in lowercase.
