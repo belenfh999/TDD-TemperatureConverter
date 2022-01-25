@@ -11,7 +11,7 @@ Implementation of a Temperature Scale Converter to learn TDD using Ruby &amp; Mi
 
 ## Setup
 * The rubyMine IDE was used for this project.
-* MiniTest is the testing framework is MiniTest.
+* MiniTest is the testing framework.
 * The ruby version is 2.6.4
 
 ## Problem to be tackled
